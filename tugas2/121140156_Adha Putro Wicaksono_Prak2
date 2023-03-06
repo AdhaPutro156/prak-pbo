@@ -1,0 +1,20 @@
+class Biodata:
+    def __init__(self, nama, nim, kelas, sks):
+        self.nama = nama
+        self.nim = nim
+        self.kelas = kelas
+        self.sks = sks
+
+    def display(self):
+        print("Nama: ", self.nama)
+        print("NIM: ", self.nim)
+        print("Kelas: ", self.kelas)
+        print("Jumlah SKS: ", self.sks)
+
+nama = input("Masukkan nama: ")
+nim = input("Masukkan NIM: ")
+kelas = input("Masukkan kelas PBO: ")
+sks = input("Masukkan jumlah SKS: ")
+
+siswa = Biodata(nama, nim, kelas, sks)
+siswa.display()
